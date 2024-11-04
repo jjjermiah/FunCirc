@@ -14,22 +14,18 @@ required_packages <- c(
   "rtracklayer",
   "tibble",
   "GenomicRanges",
-  "ggrepel"
+  "ggrepel",
+  "gtools",
+  "gridExtra"
 )
 
-# Install missing packages
+# Install missing packages using pak
 install_if_missing <- function(packages) {
-  to_install <- packages[!packages %in% installed.packages()[, "Package"]]
-  if (length(to_install) > 0) {
-    install.packages(to_install)
+  if (!requireNamespace("pak", quietly = TRUE)) {
+    install.packages("pak", repos = "https://cloud.r-project.org/")
   }
+  pak::pkg_install(packages)
 }
 
 # Install only missing packages
 install_if_missing(required_packages)
-
-# Load all required packages
-lapply(required_packages, library, character.only = TRUE)
-
-## Load the data
-load("/data/all_data.RData")
