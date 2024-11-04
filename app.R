@@ -1,5 +1,5 @@
 # Load setup
-source("~/dependencies.R")
+source("dependencies.R")
 
 # UI Code -------------------------
 
