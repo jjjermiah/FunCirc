@@ -54,7 +54,7 @@ cd FunCirc
 ## Setup
 ### Install Dependencies and Data
 Open RStudio, set the working directory to the FunCirc folder and and run the following in the console to install any missing R packages and download the data:
-```R
+```RStudio console
 source("dependencies.R")
 ```
 
@@ -64,7 +64,7 @@ Note: Ensure that all_data.RData is located in the data folder within the main p
 
 To start the app, open runApp.R in Rstudio, and run the command
 
-```r
+```RStudio
 library(shiny)
 runApp("app.R")  # Path could require edits
 ```
@@ -75,7 +75,8 @@ runApp("app.R")  # Path could require edits
 
 - **Scripts**: `app.R` and `dependencies.R`should be in the main repository.
 - **Folders**: `www` contains images, and `data` contains all relevant data for the app. 
-- **Data**: Place sample data files in a `data` folder to avoid modifying the main script paths directly.
+- **Data**: Place data file in a `data` folder to avoid modifying the main script paths directly.
+- **Paths**: Working directory should be changed to FunCirc directory, check file paths to ensure they are beign referenced properly. 
 
 
 
