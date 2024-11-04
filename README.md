@@ -1,7 +1,7 @@
 # FunCirc
 FunCirc is an interactive Shiny app designed as a comprehensive resource for functional circular RNAs (circRNAs). This database integrates data from multiple circRNA screening studies, providing researchers with tools to query and visualize circRNA essentiality and clinical expression data across various cancer types and tissue subtypes.
 
-Features
+Features: 
 - **Interactive Data Exploration**: Query essential circRNAs based on various studies, cell lines, and tissue types.
 - **Visualization of circRNA Essentiality**: Display essentiality plots from different studies to highlight critical circRNAs across cancer subtypes.
 - **Clinical Expression Analysis**: Explore circRNA expression in clinical datasets, including in-house breast cancer cohorts and prostate cancer genomes.
