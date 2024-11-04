@@ -1,0 +1,2 @@
+data/*.RData filter=lfs diff=lfs merge=lfs -text
+/Users/peterher/Desktop/Projects/funcirc_db/data/all_data.RData filter=lfs diff=lfs merge=lfs -text
