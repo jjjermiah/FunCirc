@@ -16,7 +16,6 @@ Features:
 - [Setup](#setup)
 - [Running the Application](#running-the-application)
 - [Troubleshooting](#troubleshooting)
-- [License](#license)
 
 ## Citations
 
