@@ -66,7 +66,7 @@ Open RStudio, navigate to the FunCirc project directory, and run the following c
 
 ```r
 library(shiny)
-runApp("path/to/your/app")  # Replace with the path to your FunCirc app folder
+runApp("app.R")  # Replace with the path to your FunCirc app folder
 ```
 
 ## Troubleshooting 
