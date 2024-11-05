@@ -44,11 +44,16 @@ FunCirc relies on several R packages. They are listed below and will be automati
 
 ## Installation
 
-### 1. Clone the Repository
+### Clone the Repository
 First, clone this repository to your local machine:
 ```bash
 git clone https://github.com/HansenHeLab/FunCirc.git
 cd FunCirc
+```
+Note: make sure you have git **Git LFS** installed: 
+```bash
+brew install git-lfs
+git lfs install
 ```
 
 ## Setup
