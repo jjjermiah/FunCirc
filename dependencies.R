@@ -32,4 +32,5 @@ install_if_missing(required_packages)
 lapply(required_packages, library, character.only = TRUE)
 
 ## Load the data
-load("~/data/all_data.RData")
+load(file.path(getwd(), "data", "all_data.RData"))
+
