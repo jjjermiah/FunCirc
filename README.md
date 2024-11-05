@@ -72,7 +72,7 @@ Note: Ensure that all_data.RData is located in the data folder within the main p
 
 ## Running the Application
 
-To start the app, open runApp.R in Rstudio, and run the command
+To start the app, in the console run the command
 
 ```RStudio
 library(shiny)
