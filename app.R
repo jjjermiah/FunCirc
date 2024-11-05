@@ -291,8 +291,8 @@ server <- function(input, output, session) {
         # Load arul data
         arul <- all_data$arul
         # Remove date-like patterns
-        date_pattern_rows <- grep("^\\d{2}-[A-Za-z]{3}$|^[A-Za-z]{3}-\\d{2}$", arul$gene)
-        arul <- arul[-date_pattern_rows, ]
+        # date_pattern_rows <- grep("^\\d{2}-[A-Za-z]{3}$|^[A-Za-z]{3}-\\d{2}$", arul$gene)
+        # arul <- arul[-date_pattern_rows, ]
         clinical_data[["Arul et al."]] <- arul
       } else if (input$dataset == "Canadian Prostate Cancer Genome") {
         merged_CPC <- all_data$merged_CPC
