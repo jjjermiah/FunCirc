@@ -10,7 +10,7 @@ ui <- dashboardPage(
   ),
   
   # Sidebar
-  dashboardSidebar(
+  dashboaidebar(
     width = 250, 
     sidebarMenu(
       menuItem("Home", tabName = "home"),
@@ -237,8 +237,8 @@ server <- function(input, output, session) {
       # Load data for the selected study
       if (input$study == "Her et al.") {
         # Load data for Her et al.
-        screen_data <- readRDS("data2/screen_data.rds")
-        filtered_annotation <- readRDS("data2/filtered_annotation.rds")
+        screen_data <- read("all_data$screen_data.")
+        filtered_annotation <- read("all_data$filtered_annotation.")
         # Store data in study_data
         study_data[["Her et al."]] <- list(
           screen_data = screen_data,
@@ -246,27 +246,27 @@ server <- function(input, output, session) {
         )
       } else if (input$study == "Liu et al.") {
         # Load data for Liu et al.
-        liu_data_list <- readRDS("data2/liu_data_list.rds")
-        annotation <- readRDS("data2/annotation.rds")
+        liu_data_list <- read("all_data$liu_data_list.")
+        annotation <- read("all_data$annotation.")
         study_data[["Liu et al."]] <- list(
           liu_data_list = liu_data_list,
           annotation = annotation
         )
       } else if (input$study == "Li et al.") {
         # Load data for Li et al.
-        li_et_al_data_list <- readRDS("data2/li_et_al_data_list.rds")
-        annotation_li <- readRDS("data2/annotation.rds")
+        li_et_al_data_list <- read("all_data$li_et_al_data_list.")
+        annotation_li <- read("all_data$annotation.")
         study_data[["Li et al."]] <- list(
           li_et_al_data_list = li_et_al_data_list,
           annotation_li = annotation_li
         )
       } else if (input$study == "Chen et al.") {
         # Load data for Chen et al.
-        T8_merged_list <- readRDS("data2/T8_merged_list.rds")
-        T16_merged_list <- readRDS("data2/T16_merged_list.rds")
-        chen_annotation <- readRDS("data2/chen_annotation.rds")
-        all_circ_data <- readRDS("data2/all_circ_data.rds")
-        all_linear_data <- readRDS("data2/all_linear_data.rds")
+        T8_merged_list <- read("all_data$T8_merged_list.")
+        T16_merged_list <- read("all_data$T16_merged_list.")
+        chen_annotation <- read("all_data$chen_annotation.")
+        all_circ_data <- read("all_data$all_circ_data.")
+        all_linear_data <- read("all_data$all_linear_data.")
         study_data[["Chen et al."]] <- list(
           T8_merged_list = T8_merged_list,
           T16_merged_list = T16_merged_list,
@@ -305,16 +305,16 @@ server <- function(input, output, session) {
     if (is.null(clinical_data[[input$dataset]])) {
       if (input$dataset == "Arul et al.") {
         # Load arul data
-        arul <- readRDS("data2/arul.rds")
+        arul <- read("all_data$arul.")
         # Remove date-like patterns
         date_pattern_rows <- grep("^\\d{2}-[A-Za-z]{3}$|^[A-Za-z]{3}-\\d{2}$", arul$gene)
         arul <- arul[-date_pattern_rows, ]
         clinical_data[["Arul et al."]] <- arul
       } else if (input$dataset == "Canadian Prostate Cancer Genome") {
-        merged_CPC <- readRDS("data2/merged_CPC.rds")
+        merged_CPC <- read("all_data$merged_CPC.")
         clinical_data[["Canadian Prostate Cancer Genome"]] <- merged_CPC
       } else if (input$dataset == "In-house Breast Cohort") {
-        bca_merged <- readRDS("data2/bca_merged.rds")
+        bca_merged <- read("all_data$bca_merged.")
         clinical_data[["In-house Breast Cohort"]] <- bca_merged
       }
     }
