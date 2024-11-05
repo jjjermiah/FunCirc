@@ -10,7 +10,7 @@ ui <- dashboardPage(
   ),
   
   # Sidebar
-  dashboaidebar(
+  dashboarsidebar(
     width = 250, 
     sidebarMenu(
       menuItem("Home", tabName = "home"),
