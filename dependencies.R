@@ -33,4 +33,4 @@ install_if_missing(required_packages)
 lapply(required_packages, library, character.only = TRUE)
 
 ## Load the data
-all_data <- qs::qread("/Users/peterher/Desktop/Projects/funcirc_db/data/FunCirc/data/all_data.qs")
+all_data <- qs::qread("/data/all_data.qs")
