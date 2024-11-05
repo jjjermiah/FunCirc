@@ -55,7 +55,7 @@ cd FunCirc
 ### Install Dependencies and Data
 Open RStudio, set the working directory to the FunCirc folder 
 ```RStudio console
-# setwd("path/to/FunCirc")
+setwd("path/to/FunCirc")
 ```
 
 Run the following in the console to install any missing R packages and download the data:
