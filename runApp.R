@@ -1,4 +1,4 @@
-source("dependencies.R")
+source("app/dependencies.R")
 
 
 # Load all required packages with a progress bar
@@ -23,6 +23,6 @@ close(pb)
 
 # ## Load the data
 
-all_data <- qs::qread("data/all_data.qs")
+all_data <- qs::qread("app/data/all_data.qs")
 
-runApp("app.R")
+runApp("app/app.R")
