@@ -76,7 +76,7 @@ To start the app, open runApp.R in Rstudio, and run the command
 
 ```RStudio
 library(shiny)
-runApp("app.R")  # Path could require edits
+runApp("app.R")  
 ```
 
 ## Troubleshooting 
