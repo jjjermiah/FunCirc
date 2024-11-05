@@ -14,7 +14,8 @@ required_packages <- c(
   "rtracklayer",
   "tibble",
   "GenomicRanges",
-  "ggrepel"
+  "ggrepel",
+  "qs"
 )
 
 # Install missing packages
@@ -32,5 +33,4 @@ install_if_missing(required_packages)
 lapply(required_packages, library, character.only = TRUE)
 
 ## Load the data
-load(file.path(getwd(), "data", "all_data.RData"))
-
+all_data <- qs::qread("/Users/peterher/Desktop/Projects/funcirc_db/data/FunCirc/data/all_data.qs")
