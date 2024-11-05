@@ -16,7 +16,8 @@ required_packages <- c(
   "GenomicRanges",
   "ggrepel",
   "gtools",
-  "gridExtra"
+  "gridExtra",
+  "qs"
 )
 
 # Install missing packages using pak
@@ -29,3 +30,12 @@ install_if_missing <- function(packages) {
 
 # Install only missing packages
 install_if_missing(required_packages)
+
+# Load all required packages
+lapply(required_packages, library, character.only = TRUE)
+
+# Ensure working directory is set to the FunCirc directory
+# setwd("path/to/FunCirc") 
+
+## Load the data
+all_data <- qs::qread("data/all_data.qs")

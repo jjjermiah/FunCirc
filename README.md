@@ -44,16 +44,26 @@ FunCirc relies on several R packages. They are listed below and will be automati
 
 ## Installation
 
-### 1. Clone the Repository
+### Clone the Repository
 First, clone this repository to your local machine:
 ```bash
 git clone https://github.com/HansenHeLab/FunCirc.git
 cd FunCirc
 ```
+Note: make sure you have git **Git LFS** installed: 
+```bash
+brew install git-lfs
+git lfs install
+```
 
 ## Setup
 ### Install Dependencies and Data
-Open RStudio, set the working directory to the FunCirc folder and and run the following in the console to install any missing R packages and download the data:
+Open RStudio, set the working directory to the FunCirc folder 
+```RStudio console
+setwd("path/to/FunCirc")
+```
+
+Run the following in the console to install any missing R packages and download the data:
 ```RStudio console
 source("dependencies.R")
 ```
@@ -62,11 +72,11 @@ Note: Ensure that all_data.RData is located in the data folder within the main p
 
 ## Running the Application
 
-To start the app, open runApp.R in Rstudio, and run the command
+To start the app, in the console run the command
 
 ```RStudio
 library(shiny)
-runApp("app.R")  # Path could require edits
+runApp("app.R")  
 ```
 
 ## Troubleshooting 
