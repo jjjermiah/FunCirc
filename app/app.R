@@ -771,7 +771,7 @@ server <- function(input, output, session) {
                               cex = 3,
                               adj = 1
                             ),
-                            title = 'log\u2082FC',
+                            title = expression(log[2] * "FC"),
                             cex = 1.5,
                             background = 'white'
                           ),
@@ -830,7 +830,7 @@ server <- function(input, output, session) {
                                 cex = 3,
                                 adj = 1
                               ),
-                              title = 'log\u2082FC',
+                              title = expression(log[2] * "FC"),
                               cex = 1.5,
                               background = 'white'
                             ),
@@ -977,7 +977,7 @@ server <- function(input, output, session) {
                               cex = 3,
                               adj = 1
                             ),
-                            title = 'log\u2082FC',
+                            title = expression(log[2] * "FC"),
                             cex = 1.5,
                             background = 'white'
                           ),
@@ -1036,7 +1036,7 @@ server <- function(input, output, session) {
                                 cex = 3,
                                 adj = 1
                               ),
-                              title = 'log\u2082FC',
+                              title = expression(log[2] * "FC"),
                               cex = 1.5,
                               background = 'white'
                             ),
@@ -1237,7 +1237,7 @@ server <- function(input, output, session) {
                 cex = 1.8,
                 adj = 1
               ),
-              title = 'log\u2082FC',
+              title = expression(log[2] * "FC"),
               cex = 1.5,
               padding.text = 8, 
               background = 'white'
